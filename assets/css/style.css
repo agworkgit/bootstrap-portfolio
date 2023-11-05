@@ -1,0 +1,291 @@
+
+/* Text Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+/* Visual Palette */
+
+:root {
+    --eerie: rgb(36, 36, 35);
+    --jet: rgb(51, 53, 51);
+    --saffron: rgb(245, 203, 92);
+    --alabaster: rgb(232, 237, 223);
+    --platinum: rgb(207, 219, 213);
+}
+
+/* Style Guide:
+    - Font: 'Space Grotesk', sans-serif;
+    - Background Primary: White;
+    - Background Secondary: Alabaster;
+    - Text Primary: Eerie;
+    - Text Secondary: Platinum;
+    - Accent Primary: Saffron;
+    - Card Primary: Eerie;
+    - Card Secondary: Jet;
+*/
+
+/* Resource Guide:
+    - Compress any images used to keep the loadtime quick
+*/
+
+/* Reset */
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--jet);
+}
+
+html, body {
+    overflow-x: hidden !important;
+}
+
+/* Navigation */
+
+.bg-body-tertiary {
+    background-color: var(--eerie) !important;
+}
+
+.fixed-top {
+    position: fixed !important;
+}
+
+.navbar-brand {
+    color: var(--saffron) !important;
+    font-weight: 900 !important;
+}
+
+.navbar {
+    --bs-navbar-padding-x: 0.5rem;
+    --bs-navbar-padding-y: 0.5rem;
+    --bs-navbar-color: var(--saffron) !important;
+    --bs-navbar-hover-color: var(--saffron, 0.8) !important;
+    --bs-navbar-disabled-color: rgba(var(--jet), 0.3);
+    --bs-navbar-active-color: var(--alabaster, 1) !important;
+    --bs-navbar-brand-padding-y: 0.3125rem;
+    --bs-navbar-brand-margin-end: 1rem;
+    --bs-navbar-brand-font-size: 1.25rem;
+    --bs-navbar-brand-color: rgba(var(--saffron), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--saffron), 1);
+    --bs-navbar-nav-link-padding-x: 0.5rem;
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: var(--saffron);
+    --bs-navbar-toggler-border-color: var(--saffron);
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245, 203, 92, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+.custom-toggler.navbar-toggler {
+    border-color: var(--saffron);
+    border: none;
+  } 
+
+.navbar-nav {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: var(--saffron) !important;
+}
+
+.nav-link:hover {
+    color: var(--alabaster) !important;
+}
+
+.navbar-toggler {
+    padding: 0 0 0 0;
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: rgba(232, 237, 223, 0.0);
+    background-color: transparent;
+    border-radius: 3px;
+    transition: var(--bs-navbar-toggler-transition);
+}
+
+/* Hero Section */
+
+#text {
+    margin-top: 4rem;
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+    height: 12rem;
+  }
+
+.text-body-emphasis {
+    --bs-text-opacity: 1;
+    color: var(--eerie) !important;
+    font-size: 2rem;
+}
+
+.lead {
+    color: var(--jet) !important;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.border {
+    border: var(--bs-border-width) var(--bs-border-style) var(--none)!important;
+}
+
+.border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--saffron)!important;
+}
+
+.hero-top {
+    background-color: var(--saffron);
+}
+
+/* About Section */
+
+.about-para {
+    color: var(--alabaster); 
+    font-size: 1.25rem;
+}
+
+.about-title {
+    color: var(--saffron);
+}
+
+.pointer-about {
+    height: 5vh;
+    display: hidden;
+}
+
+/* Skills Section*/
+
+#skills {
+    color: var(--saffron) !important;
+}
+
+.skills-title {
+    color: var(--saffron) !important;
+}
+
+.skills-para {
+    color: var(--alabaster) !important;
+    font-size: 1.25rem;
+}
+
+.pointer-skills {
+    height: 5vh;
+    display: hidden;
+}
+
+/* Work Section */
+
+#work-head {
+    color: var(--saffron);
+}
+
+.card {
+    --bs-card-bg: var(--eerie) !important;
+    color: var(--saffron) !important;
+}
+
+.work-para {
+    color: var(--alabaster) !important;
+    font-size: 1.25rem;
+}
+
+.btn-primary {
+    --bs-btn-color: var(--alabaster);
+    --bs-btn-bg: var(--jet);
+    --bs-btn-border-color: var(--jet);
+    --bs-btn-hover-color: var(--jet);
+    --bs-btn-hover-bg: var(--saffron);
+    --bs-btn-hover-border-color: var(--saffron);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: var(--alabaster);
+    --bs-btn-active-bg: var(--jet);
+    --bs-btn-active-border-color: var(--jet);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--saffron);
+    --bs-btn-disabled-border-color: var(--saffron);
+}
+
+.pointer-work {
+    height: 5vh;
+    display: hidden;
+}
+
+/* Contact Me */
+
+.contact-me {
+    color: var(--saffron);
+    height: auto;
+}
+
+.contact-para {
+    color: var(--alabaster);
+    font-size: 1.25rem;    
+}
+
+.btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+}
+
+.btn-outlined-contacts {
+    --bs-btn-color: var(--saffron) !important;
+    --bs-btn-border-color: var(--saffron) !important;
+    --bs-btn-hover-color: var(--jet) !important;
+    --bs-btn-hover-bg: var(--saffron) !important;
+    --bs-btn-hover-border-color: var(--saffron) !important;
+    --bs-btn-focus-shadow-rgb: 220,53,69 !important;
+    --bs-btn-active-color: #fff !important;
+    --bs-btn-active-bg: var(--saffron) !important;
+    --bs-btn-active-border-color: var(--saffron) !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0,0,0,0.125) !important;
+    --bs-btn-disabled-color: var(--saffron) !important;
+    --bs-btn-disabled-bg: transparent !important;
+    --bs-btn-disabled-border-color: var(--saffron) !important;
+    --bs-gradient: none !important;
+}
+
+a {
+    width: fit-content !important;
+}
+
+.pointer-contact {
+    height: 3vh;
+    display: hidden;
+}
+
+/* Footer Section */
+
+.footer-info {
+    color: var(--saffron) !important;
+}
+
+.form-control:focus {   
+    border-color: rgba(245, 203, 92, 0.8) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(245, 203, 92, 0.6) !important;
+    outline: 0 none;
+  }
+
+.flex-column a {
+    color: var(--alabaster) !important;
+}
+
+.border-top {
+    color: var(--saffron) !important;
+    border-color: var(--saffron) !important;
+}
+
+.footer-note {
+    text-align: center;
+}
